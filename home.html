@@ -1,0 +1,139 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+
+
+<title>Aero8小小的网站</title>
+<link rel="shortcut icon"  href="file-home/icon.gif"/>
+
+
+
+
+
+<!-- 请把这段放在 head 里面 -->
+<script type="text/javascript" language="javascript1.5">
+<!--
+window.onload = theClock
+function theClock() {
+now = new Date;
+theTime = ((now.getHours() > 0 && now.getHours() < 13)) ? now.getHours() : (now.getHours() == 0) ? 12 : now.getHours()-12;
+theTime += (now.getMinutes() > 9) ? ":" + now.getMinutes() : ":0" + now.getMinutes();
+theTime += (now.getSeconds() > 9) ? ":" + now.getSeconds() : ":0" + now.getSeconds();
+theTime += (now.getHours() < 12) ? " 上午" : " 下午";
+clockSpan = document.getElementById("myClock");
+clockSpan.replaceChild(document.createTextNode(theTime), clockSpan.firstChild);
+setTimeout("theClock()",1000);
+}
+// End hiding script from old browsers -->
+</script>
+<!-- 这里结束 -->
+<style type="text/css">
+	ul#menus{
+    margin: 0;
+    padding: 0;
+    float: left;
+    width: 100%;
+   
+    background: #cfcfcf;
+	}
+	ul#menus li{
+	font-size: 20px;
+    display: block;
+	}
+	ul#menus li a {
+    float: left;
+    color: #000000;
+    padding: 4px 30px;
+    text-decoration: none;
+    background-color: rgba(207,207,207,0.7);
+	}
+	ul#menus a:hover{
+    color: #66ccff;
+    background: #666666;
+	
+    border-bottom: 4px solid #66ccff;
+    padding-bottom: 0;
+	}
+	.home{
+	display: block;
+    float: left;
+    color: #66ccff;
+    text-decoration: underline;  
+	background-color: rgba(207,207,207,0.7);
+	}
+    body,td,th {
+        font-family: "Microsoft YaHei UI Light";
+	    background: url("./file-home/background.jpg");
+}
+	div#Welcome message{
+		font-family: 'Microsoft YaHei UI';
+		background: #0d0d0d;
+	}
+	div#YY{
+		box-shadow: 1px 2px 30px 10px #555d61;
+		border-radius: 30px;
+		background: #66ccff;
+		font-size: 30px;
+		-webkit-transition: all 0.5s ease 0s;
+        -o-transition: all 0.5s ease 0s;
+        transition: all 0.5s ease 0s;
+		width: 500px;
+		height: 150px;
+		line-height: 150px;
+	}
+	div#YY:hover{
+		border-radius: 20px;
+		font-size: 40px;
+		width: 550px;
+		height: 200px;
+		line-height: 200px;
+	}
+	div#YY:active{
+		
+		font-size: 20px;
+		width: 450px;
+		height: 100px;
+		line-height: 100px;
+	}
+	
+a:link {
+    text-decoration: none;
+}
+a:visited {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: none;
+}
+a:active {
+    text-decoration: none;
+}
+</style>
+</head>
+
+<body>
+
+ 
+<ul id="menus">
+	
+	<li><font color="#66ccff"><a href="#" onclick="javascript:alert('现在显示的页面就是主页')" title="主页" target="_self">主页</a></font></li>
+	
+	<li><a href="./doc.html" title="下载" target="_self">下载</a></li>
+    
+    <li><a href="https://space.bilibili.com/1911529131" title="前往B站主页" target="_self">前往B站主页</a></li>
+	<li><a href="https://aero80wd.github.io/Aero8m" title="返回旧版网页" target="_self">返回旧版网页</a></li>
+	<li><a href="https://aero80wd.github.io/Home" title="回到正式版网页" target="_self">回到正式版网页</a></li>
+  <li><a href="./file-home/time.exe" title="时间设置"><span id="myClock">?</span></a></li>
+    
+	
+</ul>
+<center>
+  <div id="YE">
+<img src="./file-home/WEL.png" alt="" width="1520" height="170" id="WEL"/>
+<div id="YY">
+<font color="#ffffff"><a href="./file-home/YY.html" style="text-align: left">试玩我随便做的音游</a></font></div>
+</div></center>
+
+</body>
+</html>
