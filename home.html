@@ -1,12 +1,59 @@
 <!doctype html>
+<!--
+	
+	Aero8小小的网站
+	                            
+                 0MMM                             
+                 M0iMa                            
+                7M7 MM                            
+                MM  @M:                           
+                MM  XMB                           
+               aMX   MM                           
+               MM    BM7                          
+              :MW    ;MM                          
+              BM;     MM                          
+              MM      ZM2                         
+             7M8      :MM                         
+             MM:       MM:                        
+             MM        2M8                        
+            aM2         MM                        
+            MM          @Mr                       
+           iMB          ,MW                       
+           0MZ;7XXXXXXXr7MM                       
+           MMMMMMMMMMMMMMMM2                      
+          XMWirr7r7r7r7r;SMM                      
+          MM,             MM,                     
+          MM              ZM8    Za     M         
+         ZMZ              .MM    2M    SM         
+         MM.               MM;   70;   ZZ         
+        :MM                SMW   S:Z  X;2         
+        WMS                 MM   2.r; 8 8         
+        MM                  WMX  a: arr 8         
+       ZM@                  7MM  Z; 2M  W         
+       ZWi                   0W. 7, .r  X
+	
+	
+欢迎来到Aero8小小的网站！	网站源代码：github.com/aero80wd/Home
+Powered By Aero8小小	
+	
+   -->
 <html>
 <head>
 <meta charset="utf-8">
 
 
+
 <title>Aero8小小的网站</title>
 <link rel="shortcut icon"  href="file-home/icon.gif"/>
-
+<!--[if lte IE11]>
+<script>
+var bro = getBroswerAndVersion();
+    if(bro=="IE5" || bro=="IE6" || bro=="IE7" || bro=="IE8" || bro=="IE9" || bro="IE10")
+    {
+      alert("检测到使用IE浏览器，部分CSS动画将无法显示");   
+	}
+</script>
+<![endif]-->
 
 
 
@@ -70,34 +117,28 @@ setTimeout("theClock()",1000);
 		font-family: 'Microsoft YaHei UI';
 		background: #0d0d0d;
 	}
-	div#YY{
-		box-shadow: 1px 2px 30px 10px #555d61;
-		border-radius: 30px;
-		background: #66ccff;
+	#YE{
+		text-align: center;
+		background-color: #66ccff;
+		height: 50px;
 		font-size: 30px;
-		-webkit-transition: all 0.5s ease 0s;
-        -o-transition: all 0.5s ease 0s;
-        transition: all 0.5s ease 0s;
-		width: 500px;
-		height: 150px;
-		line-height: 150px;
+		line-height: 50px;
 	}
-	div#YY:hover{
-		border-radius: 20px;
-		font-size: 40px;
-		width: 550px;
-		height: 200px;
-		line-height: 200px;
-	}
-	div#YY:active{
-		
-		font-size: 20px;
-		width: 450px;
-		height: 100px;
-		line-height: 100px;
+	.a{
+    border-radius: 30px;
+    font-size: 30px;
+    width: 500px;
+    height: 150px;
+    background-color: #66ccff;
+    line-height: 150px;
+    -webkit-transition: all 0.5s ease-in-out 0s;
+    -o-transition: all 0.5s ease-in-out 0s;
+    transition: all 0.5s ease-in-out 0s;
 	}
 	
+	
 a:link {
+	color: #ffffff;
     text-decoration: none;
 }
 a:visited {
@@ -109,11 +150,24 @@ a:hover {
 a:active {
     text-decoration: none;
 }
+.a:hover {
+    width: 550px;
+    height: 200px;
+    font-size: 40px;
+    line-height: 200px;
+}
+	.a:active{
+	width: 450px;
+    height: 100px;
+    font-size: 20px;
+    line-height: 100px;
+	}
 </style>
 </head>
 
 <body>
-
+<div id="YE">
+ <font color="#ffffff">Aero8小小的网站</font></div>
  
 <ul id="menus">
 	
@@ -124,16 +178,16 @@ a:active {
     <li><a href="https://space.bilibili.com/1911529131" title="前往B站主页" target="_self">前往B站主页</a></li>
 	<li><a href="https://aero80wd.github.io/Aero8m" title="返回旧版网页" target="_self">返回旧版网页</a></li>
 	<li><a href="https://aero80wd.github.io/Home" title="回到正式版网页" target="_self">回到正式版网页</a></li>
-  <li><a href="./file-home/time.exe" title="时间设置"><span id="myClock">?</span></a></li>
+  <li><a href="./file-home/time.exe" title="时间设置"><span id="myClock">正在加载时间</span></a></li>
     
 	
 </ul>
+<font size="0">.</font>
 <center>
-  <div id="YE">
-<img src="./file-home/WEL.png" alt="" width="1520" height="170" id="WEL"/>
-<div id="YY">
-<font color="#ffffff"><a href="./file-home/YY.html" style="text-align: left">试玩我随便做的音游</a></font></div>
-</div></center>
+
+<div class="a">
+<a href="./file-home/YY.html" style="text-align: left">试玩我随便做的音游</a></div>
+</center>
 
 </body>
 </html>
