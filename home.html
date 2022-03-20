@@ -41,8 +41,6 @@ Powered By Aero8小小
 <head>
 <meta charset="utf-8">
 
-
-
 <title>Aero8小小的网站</title>
 <link rel="shortcut icon"  href="file-home/icon.gif"/>
 <!--[if lte IE11]>
@@ -81,8 +79,8 @@ setTimeout("theClock()",1000);
     padding: 0;
     float: left;
     width: 100%;
-   
-    background: #cfcfcf;
+    background-color: #20D6FF;
+    text-align: center;
 	}
 	ul#menus li{
 	font-size: 20px;
@@ -90,17 +88,17 @@ setTimeout("theClock()",1000);
 	}
 	ul#menus li a {
     float: left;
-    color: #000000;
+    color: #ffffff;
     padding: 4px 30px;
     text-decoration: none;
-    background-color: rgba(207,207,207,0.7);
+    
 	}
 	ul#menus a:hover{
-    color: #66ccff;
-    background: #666666;
-	
-    border-bottom: 4px solid #66ccff;
+    
+    background-color: #00A1F1;
+    border-bottom: 4px solid #497c8a;
     padding-bottom: 0;
+    text-align: center;
 	}
 	.home{
 	display: block;
@@ -111,18 +109,24 @@ setTimeout("theClock()",1000);
 	}
     body,td,th {
         font-family: "Microsoft YaHei UI Light";
-	    background: url("./file-home/background.jpg");
+	    background: url("./file-home/background.gif");
+		
+		
 }
 	div#Welcome message{
 		font-family: 'Microsoft YaHei UI';
 		background: #0d0d0d;
 	}
 	#YE{
-		text-align: center;
-		background-color: #66ccff;
-		height: 50px;
-		font-size: 30px;
-		line-height: 50px;
+	color: #ffffff;
+    text-align: center;
+    background-color: #66ccff;
+    height: 70px;
+    font-size: 30px;
+    line-height: 70px;
+    -webkit-transition: all 0.5s ease 0s;
+    -o-transition: all 0.5s ease 0s;
+    transition: all 0.5s ease 0s;
 	}
 	.a{
     border-radius: 30px;
@@ -131,9 +135,9 @@ setTimeout("theClock()",1000);
     height: 150px;
     background-color: #66ccff;
     line-height: 150px;
-    -webkit-transition: all 0.5s ease-in-out 0s;
-    -o-transition: all 0.5s ease-in-out 0s;
-    transition: all 0.5s ease-in-out 0s;
+    -webkit-transition: all 0.5s ease 0s;
+    -o-transition: all 0.5s ease 0s;
+    transition: all 0.5s ease 0s;
 	}
 	
 	
@@ -162,26 +166,47 @@ a:active {
     font-size: 20px;
     line-height: 100px;
 	}
+#YE:hover {
+    font-size: 50px;
+    height: 120px;
+    line-height: 120px;
+}
+#myClock{
+	float: left;
+    color: #ffffff;
+    padding: 4px 30px;
+	text-decoration: none;	
+}
+#YE:active {
+    background-color: #FFFFFF;
+    color: #66ccff;
+    font-size: 20px;
+    height: 60px;
+    line-height: 60px;
+}
+	#index a{
+		text-decoration: none;
+	}
 </style>
 </head>
 
 <body>
 <div id="YE">
- <font color="#ffffff">Aero8小小的网站</font></div>
+Aero8小小的网站</div>
  
-<ul id="menus">
+<center><ul id="menus">
 	
-	<li><font color="#66ccff"><a href="#" onclick="javascript:alert('现在显示的页面就是主页')" title="主页" target="_self">主页</a></font></li>
+	<li id="index"><a href="#" onclick="javascript:alert('现在显示的页面就是主页')" title="主页" target="_self">主页</a></li>
 	
 	<li><a href="./doc.html" title="下载" target="_self">下载</a></li>
-    
+    <li><a href="./ver.html" title="关于" target="_self">关于</a></li>
     <li><a href="https://space.bilibili.com/1911529131" title="前往B站主页" target="_self">前往B站主页</a></li>
 	<li><a href="https://aero80wd.github.io/Aero8m" title="返回旧版网页" target="_self">返回旧版网页</a></li>
 	<li><a href="https://aero80wd.github.io/Home" title="回到正式版网页" target="_self">回到正式版网页</a></li>
-  <li><a href="./file-home/time.exe" title="时间设置"><span id="myClock">正在加载时间</span></a></li>
+    <li><span id="myClock">正在加载时间</span></li>
     
 	
-</ul>
+</ul></center>
 <font size="0">.</font>
 <center>
 
