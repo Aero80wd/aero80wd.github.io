@@ -151,6 +151,7 @@ function MM_swapImage() { //v3.0
     transition: all 0.5s ease 0s;
 	}
 	.a{
+	color: #ffffff;
     border-radius: 30px;
     font-size: 30px;
     width: 500px;
@@ -164,14 +165,14 @@ function MM_swapImage() { //v3.0
 	
 	
 a:link {
-	color: #000000;
+	
     text-decoration: none;
 }
 a:visited {
     text-decoration: none;
 }
 a:hover {
-	color: #66ccff;
+	
     text-decoration: none;
 }
 a:active {
@@ -185,6 +186,8 @@ a:active {
     line-height: 200px;
 }
 	.a:active{
+	background: #ffffff;
+		
 	width: 450px;
     height: 100px;
     font-size: 20px;
@@ -212,16 +215,24 @@ a:active {
 		text-decoration: none;
 	}
 	
+	.get{color: #000000;}
+	.get:hover{color: #66ccff;}
+	.get:active{color: #ffffff;}
+	.get::visited{color: #000000}
+	.mal{color: #000000;}
+	.mal:hover{color: #66ccff;}
+	.mal:active{color: #ffffff;}
+	.mal::visited{color: #000000}
 </style>
 </head>
 
-<body onLoad="MM_preloadImages('file-home/icon2.gif')">
+<body onLoad="MM_preloadImages('https://th.bing.com/th/id/R.5faffa7d1b2631d5d6ecc1039bf3dcf3?rik=Ef/Vb3i2J+PZ/g&amp;riu=http://tva1.sinaimg.cn/crop.0.0.1024.1024.1024/68318509jw8f3sh9uz4ukj20sg0sggnf.jpg&amp;ehk=DXGkMS22XHdPszG2zsEZE5YRfLn6pTDaI6s1JSQkkOs=&amp;risl=&amp;pid=ImgRaw&amp;r=0')">
 <div id="YE">
 Aero8小小的网站</div>
  
 <center><ul id="menus">
 	
-	<li id="index"><a href="./home.html" title="主页" target="_self">主页</a></li>
+	<li id="index"><a href="./index.html" title="主页" target="_self">主页</a></li>
 	
 	<li><a href="./doc.html" title="下载" target="_self">下载</a></li>
     <li><a href="#" onclick="javascript:alert('现在显示的页面就是关于')" title="关于" target="_self">关于</a></li>
@@ -233,13 +244,15 @@ Aero8小小的网站</div>
 	
 </ul></center>
 <font size="0">.</font>
-<center><a href="https://space.bilibili.com/1911529131" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('icon','','file-home/icon2.gif',1)"><img src="file-home/icon.gif" alt="" width="200" height="200" id="icon"></a></center>
-<center><a href="./home.html"><font size="10">Aero8小小的网站</font></a></center>
+<center>
+  <a href="https://space.bilibili.com/1911529131" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('icon','','https://th.bing.com/th/id/R.5faffa7d1b2631d5d6ecc1039bf3dcf3?rik=Ef/Vb3i2J+PZ/g&amp;riu=http://tva1.sinaimg.cn/crop.0.0.1024.1024.1024/68318509jw8f3sh9uz4ukj20sg0sggnf.jpg&amp;ehk=DXGkMS22XHdPszG2zsEZE5YRfLn6pTDaI6s1JSQkkOs=&amp;risl=&amp;pid=ImgRaw&amp;r=0',1)" title="前往B站主页"><img src="file-home/icon.gif" alt="" width="200" height="200" id="icon"></a>
+</center>
+<center><a href="./home.html" class="get"><font size="10">Aero8小小的网站</font></a></center>
 <center><font size="5">Preview 1.0</font></center>
 <center><font size="5">Powerd By Aero8小小</font></center>
 <font size="0">.</font>
 <center><font size="5">联系我？前往QQ群697312554</font></center>
 <center><font size="5">或</font></center>
-<center><font size="5">邮箱<a href="mailto:JH18259296801@163.com">JH18259296801@163.com</a></font></center>
+<center><font size="5">邮箱<a href="mailto:JH18259296801@163.com" class="mal">JH18259296801@163.com</a></font></center>
 </body>
 </html>
